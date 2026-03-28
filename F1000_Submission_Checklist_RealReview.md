@@ -11,8 +11,8 @@ Package: `<repo-root>`
 - [x] Example dataset reference available: `f1000_artifacts\example_dataset.csv`
 - [x] Validation summary reference available: `f1000_artifacts\validation_summary.md`
 - [x] README, CHANGELOG, LICENSE present.
-- [ ] Public repository URL placeholder pending final release.
-- [ ] Zenodo DOI placeholder pending final release.
+- [x] Public repository URL: https://github.com/mahmood726-cyber/robma
+- [ ] Zenodo DOI pending (mint after GitHub release).
 
 ## Remaining actions before external submission
 1. Replace repository placeholder with final URL.

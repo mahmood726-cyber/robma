@@ -5,9 +5,9 @@ This manifest is the shortest reviewer-facing rerun path for the local software 
 ## Reviewer Entry Points
 - Project directory: `<repo-root>`.
 - Preferred documentation start points: `README.md`, `f1000_artifacts/tutorial_walkthrough.md`.
-- Detected public repository root: No project-specific public repository URL was detected locally; public release root pending.
-- Detected public source snapshot: No fixed public source snapshot was detected locally.
-- Detected public archive record: No project-specific DOI or Zenodo record URL was detected locally; archive registration pending.
+- Detected public repository root: https://github.com/mahmood726-cyber/robma
+- Detected public source snapshot: https://github.com/mahmood726-cyber/robma/tree/master
+- Detected public archive record: [Zenodo DOI pending]
 - Environment capture files: `environment.yml`.
 - Validation/test artifacts: `f1000_artifacts/validation_summary.md`, `f1000_artifacts/build_validation_summary.py`.
 

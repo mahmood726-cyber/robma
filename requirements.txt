@@ -1,0 +1,6 @@
+# ROBMA Reproducibility Capsule — Python dependencies
+#
+# This project uses only Python standard library modules (csv, pathlib, json).
+# No third-party packages are required.
+#
+# Python >= 3.8 is recommended.

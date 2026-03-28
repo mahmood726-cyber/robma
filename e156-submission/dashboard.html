@@ -856,12 +856,12 @@
     };
 
     (function renderE156() {
-      var container = document.getElementById("e156body");
-      var sentences = e156.body.split(/(?<=[.?!])\s+/);
-      var html = "";
-      for (var i = 0; i < sentences.length; i++) {
-        var role = e156.roles[i] || "";
-        var color = roleColors[role] || "#333";
+      const container = document.getElementById("e156body");
+      const sentences = e156.body.split(/(?<=[.?!])\s+/);
+      let html = "";
+      for (let i = 0; i < sentences.length; i++) {
+        const role = e156.roles[i] || "";
+        const color = roleColors[role] || "#333";
         html += '<span style="border-bottom:2px solid ' + color + '; padding-bottom:1px;" title="' + role + '">' + sentences[i] + '</span> ';
       }
       container.innerHTML = html;
@@ -882,12 +882,12 @@
     }
 
     function updateCompletion() {
-      var items = document.querySelectorAll("#checklist .cb");
-      var done = 0;
-      for (var i = 0; i < items.length; i++) {
+      const items = document.querySelectorAll("#checklist .cb");
+      let done = 0;
+      for (let i = 0; i < items.length; i++) {
         if (items[i].classList.contains("checked")) done++;
       }
-      var pct = Math.round((done / items.length) * 100);
+      const pct = Math.round((done / items.length) * 100);
       document.getElementById("completionPct").textContent = pct + "%";
       document.getElementById("completionBar").style.width = pct + "%";
     }
@@ -895,7 +895,7 @@
     /* ---- Charts ---- */
     /* Checksum chart: pooled + LOO */
     (function() {
-      var ctx = document.getElementById("checksumChart").getContext("2d");
+      const ctx = document.getElementById("checksumChart").getContext("2d");
       new Chart(ctx, {
         type: "bar",
         data: {
@@ -939,10 +939,10 @@
 
     /* Dose-response chart */
     (function() {
-      var ctx = document.getElementById("doseChart").getContext("2d");
-      var doses = [0, 10, 20, 30];
-      var effects = [0.000, 0.120, 0.210, 0.260];
-      var ses = [0.100, 0.110, 0.115, 0.120];
+      const ctx = document.getElementById("doseChart").getContext("2d");
+      const doses = [0, 10, 20, 30];
+      const effects = [0.000, 0.120, 0.210, 0.260];
+      const ses = [0.100, 0.110, 0.115, 0.120];
 
       new Chart(ctx, {
         type: "scatter",
@@ -989,7 +989,7 @@
               filter: function(item) { return item.datasetIndex === 0; },
               callbacks: {
                 label: function(ctx) {
-                  var i = ctx.dataIndex;
+                  const i = ctx.dataIndex;
                   return "Dose " + doses[i] + ": " + effects[i].toFixed(3) + " (SE " + ses[i].toFixed(3) + ")";
                 }
               }

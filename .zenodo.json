@@ -1,5 +1,5 @@
 {
-  "title": "ROBMA Reproducibility Capsule",
+  "title": "ROBMA Reproducibility Capsule: a software tool for reviewer-auditable evidence synthesis",
   "description": "Zenodo release metadata for the ROBMA Reproducibility Capsule software package stored under C:/Models/ROBMA. Mint the DOI from the next public GitHub release and then update the F1000 software-availability section to cite the resulting archive record.",
   "upload_type": "software",
   "access_right": "open",
@@ -26,11 +26,13 @@
     }
   ],
   "keywords": [
-    "ROBMA Reproducibility Capsule",
-    "ROBMA",
-    "software",
-    "reproducibility",
+    "robust Bayesian model averaging",
+    "reproducibility capsule",
+    "evidence synthesis",
+    "reviewer walkthrough",
+    "software tool",
     "F1000Research"
   ],
-  "notes": "Prepared locally to reduce DOI-minting friction for the F1000 submission bundle."
+  "license": "MIT",
+  "notes": "Reproducibility capsule for Robust Bayesian Model Averaging. Includes example dataset, tutorial walkthrough, validation summary, and F1000 manuscript materials."
 }

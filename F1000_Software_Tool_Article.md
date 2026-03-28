@@ -45,6 +45,7 @@ The local implementation is packaged under `<repo-root>`. The manuscript identif
 - Detected environment capture or packaging files: `environment.yml`.
 - Named worked-example paths in this draft: `f1000_artifacts/example_dataset.csv` for a fixed reviewer example; `f1000_artifacts/tutorial_walkthrough.md` for the rerun narrative; `f1000_artifacts/validation_summary.md` for the local evidence map.
 - Detected validation or regression artifacts: `f1000_artifacts/validation_summary.md`, `f1000_artifacts/build_validation_summary.py`.
+- Workflow diagram blueprint: `f1000_artifacts/flowchart_blueprint.md`.
 - Detected example or sample data files: `f1000_artifacts/example_dataset.csv`.
 
 ### Worked examples and validation materials
@@ -98,9 +99,9 @@ This is the most scope-sensitive manuscript in the set. The safest, most accurat
 
 ## Software Availability
 - Local source package: `<repo-root>`.
-- Public repository: [TODO: Insert GitHub URL after push]
-- Public source snapshot: [TODO: Insert tagged release URL after push]
-- DOI/archive record: [TODO: Insert Zenodo DOI after minting]
+- Public repository: https://github.com/mahmood726-cyber/robma
+- Public source snapshot: https://github.com/mahmood726-cyber/robma/tree/master
+- DOI/archive record: [Zenodo DOI pending]
 - Environment capture detected locally: `environment.yml`.
 - Reviewer-facing documentation detected locally: `README.md`, `f1000_artifacts/tutorial_walkthrough.md`.
 - Reproducibility walkthrough: `f1000_artifacts/tutorial_walkthrough.md` where present.

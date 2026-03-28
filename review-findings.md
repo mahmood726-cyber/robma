@@ -1,6 +1,7 @@
+## REVIEW CLEAN (except P0-4: needs user action for GitHub/Zenodo)
 ## Multi-Persona Review: ROBMA (F1000 Capsule + E156 + Dashboard)
 ### Date: 2026-03-28
-### Summary: 4 P0, 6 P1, 5 P2
+### Summary: 3/4 P0 FIXED (P0-4 needs GitHub push + Zenodo DOI), 6/6 P1 FIXED, 5 P2 deferred
 
 #### P0 -- Critical
 - **P0-1** [SWE]: LOO chart values in dashboard are wrong — 0.150/0.120 should be 0.138/0.111 (dashboard.html:905)
