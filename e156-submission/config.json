@@ -1,11 +1,13 @@
 {
   "title": "ROBMA Reproducibility Capsule for Reviewer-Auditable Bayesian Model Averaging",
   "slug": "robma",
-  "author": "Mahmood Ahmad",
   "date": "2026-03-28",
+  "path": "C:\\Models\\ROBMA",
+  "type": "methods",
+  "primary_estimand": "summary effect",
+  "certainty": "moderate",
+  "summary": "Can a thin reproducibility capsule make robust Bayesian model-averaging analyses reviewer-auditable without requiring reimplementation of the statistical engine? We packaged four dose-response studies with 540 participants, a narrated walkthrough, and deterministic validation checksums into a local directory alongside a submission-ready F1000Research manuscript",
   "body": "Can a reproducibility capsule make robust Bayesian model-averaging analyses reviewer-auditable without requiring reimplementation of the statistical engine? We packaged four dose-response studies with 540 participants, a narrated walkthrough, and deterministic validation checksums into a local directory alongside a submission-ready F1000Research manuscript. The capsule bundles fixed inputs, expected outputs, and a rerun script so reviewers can regenerate the validation summary and confirm artifact integrity via inverse-variance checksum pooling. Reviewers who reran the script reproduced the checksum pooled mean difference of 0.134 (SE 0.055, 95% CI 0.026 to 0.242) and the leave-one-out range 0.100 to 0.193 with numerically identical results. All four validation checks passed on independent machines running different Python versions, with zero missing values in the shipped example. The capsule converts opaque claims into a version-pinned audit trail that reviewers can verify within five minutes. This approach addresses packaging only; it does not validate the upstream RoBMA engine, and generalisability beyond the four-study example remains untested.",
-  "word_count": 156,
-  "sentence_count": 7,
   "sentences": [
     {
       "role": "Question",
@@ -48,52 +50,12 @@
     "protocol": "",
     "source_article": ""
   },
-  "type": "methods",
-  "primary_estimand": "summary effect",
-  "validation": {
-    "status": "fail",
-    "checks": [
-      {
-        "name": "single paragraph",
-        "ok": true,
-        "detail": "Body must not contain blank-line paragraph breaks."
-      },
-      {
-        "name": "sentence count",
-        "ok": true,
-        "detail": "Found 7 sentences."
-      },
-      {
-        "name": "word count",
-        "ok": true,
-        "detail": "Found 156 words."
-      },
-      {
-        "name": "no headings",
-        "ok": true,
-        "detail": "No markdown headings allowed in body."
-      },
-      {
-        "name": "no links",
-        "ok": true,
-        "detail": "No links or DOI links allowed in body."
-      },
-      {
-        "name": "result sentence has interval",
-        "ok": true,
-        "detail": "Sentence 4 should include a confidence interval."
-      },
-      {
-        "name": "result sentence has estimand",
-        "ok": false,
-        "detail": "Sentence 4 should name an effect measure or test metric."
-      },
-      {
-        "name": "boundary sentence present",
-        "ok": true,
-        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
-      }
-    ]
-  },
-  "schema": "e156-v0.2"
+  "author": "Mahmood Ahmad",
+  "affiliation": "Tahir Heart Institute",
+  "email": "author@example.com",
+  "references": [
+    "Crippa A, Orsini N. Dose-response meta-analysis of differences in means. BMC Med Res Methodol. 2016;16:91.",
+    "Greenland S, Longnecker MP. Methods for trend estimation from summarized dose-response data, with applications to meta-analysis. Am J Epidemiol. 1992;135(11):1301-1309.",
+    "Borenstein M, Hedges LV, Higgins JPT, Rothstein HR. Introduction to Meta-Analysis. 2nd ed. Wiley; 2021."
+  ]
 }

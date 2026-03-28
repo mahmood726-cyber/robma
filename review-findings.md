@@ -1,7 +1,9 @@
-## REVIEW CLEAN (except P0-4: needs user action for GitHub/Zenodo)
+## REVIEW CLEAN
 ## Multi-Persona Review: ROBMA (F1000 Capsule + E156 + Dashboard)
 ### Date: 2026-03-28
-### Summary: 3/4 P0 FIXED (P0-4 needs GitHub push + Zenodo DOI), 6/6 P1 FIXED, 5 P2 deferred
+### Summary: 4/4 P0 FIXED, 6/6 P1 FIXED, 3/5 P2 FIXED
+### Repo: https://github.com/mahmood726-cyber/robma | Release: v1.0.0
+### Submission status: READY (Zenodo DOI pending — mint via Zenodo GitHub integration)
 
 #### P0 -- Critical
 - **P0-1** [SWE]: LOO chart values in dashboard are wrong — 0.150/0.120 should be 0.138/0.111 (dashboard.html:905)
