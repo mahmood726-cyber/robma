@@ -2,7 +2,7 @@
   "title": "ROBMA Reproducibility Capsule for Reviewer-Auditable Bayesian Model Averaging",
   "slug": "robma",
   "date": "2026-03-28",
-  "path": "/mnt/c/Models/ROBMA",
+  "path": "C:\\Models\\ROBMA",
   "type": "methods",
   "primary_estimand": "summary effect",
   "certainty": "moderate",
