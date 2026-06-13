@@ -38,18 +38,25 @@ def main() -> None:
     events = [int(float(row["events"])) for row in rows]
     doses = [float(row["dose"]) for row in rows]
 
+    if any(se <= 0.0 for se in standard_errors):
+        raise ValueError("standard error (se) must be positive for inverse-variance weighting")
+
     weights = [1.0 / (se * se) for se in standard_errors]
     pooled_effect = sum(weight * effect for weight, effect in zip(weights, effects)) / sum(weights)
     pooled_se = (1.0 / sum(weights)) ** 0.5
     ci_low = pooled_effect - 1.96 * pooled_se
     ci_high = pooled_effect + 1.96 * pooled_se
 
+    # Leave-one-out is only defined when at least two studies remain after removal.
     leave_one_out = []
-    for index in range(len(rows)):
-        reduced_weights = [weight for i, weight in enumerate(weights) if i != index]
-        reduced_effects = [effect for i, effect in enumerate(effects) if i != index]
-        pooled = sum(weight * effect for weight, effect in zip(reduced_weights, reduced_effects)) / sum(reduced_weights)
-        leave_one_out.append(pooled)
+    if len(rows) >= 2:
+        for index in range(len(rows)):
+            reduced_weights = [weight for i, weight in enumerate(weights) if i != index]
+            reduced_effects = [effect for i, effect in enumerate(effects) if i != index]
+            pooled = sum(weight * effect for weight, effect in zip(reduced_weights, reduced_effects)) / sum(reduced_weights)
+            leave_one_out.append(pooled)
+    else:
+        leave_one_out = [pooled_effect]
 
     markdown = "\n".join(
         [
